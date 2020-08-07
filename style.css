@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: balooda;
+    src: url('./fonts/BalooDa2-Regular.ttf');
+}
+
+body {
+    background: #000;
+    font-family: balooda, sans-serif;
+    background: url('./images/love-5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    animation: myLove 10s infinite alternate;
+}
+
+@keyframes myLove {
+    0% {
+        background: url('./images/love-5.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    33% {
+        background: url('./images/love-6.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+    66% {
+        background: url('./images/love-7.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.wrapper {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 30%;
+    padding: 30px;
+    margin: 0 auto;
+    height: 500px;
+    text-align: center;
+    background: white;
+    border-radius: 12px;
+}
+
+.wrapper h1 {
+    color: rgb(255, 100, 126);
+}
+
+.form-section {
+    margin-top: 25px;
+}
+
+.form-section label {
+    display: block;
+    text-align: left;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: cornflowerblue;
+}
+
+.form-section input {
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 5px 2px;
+    border-radius: 1px;
+    font-size: 1.1rem;
+}
+
+.secondPerson, .relationship {
+    margin-top: 25px;
+}
+
+.form-section select {
+    width: 100%;
+    padding: 8px 0;
+    cursor: pointer;
+    color: cornflowerblue;
+    border: 1px solid #ddd;
+}
+
+.form-section option {
+    font-size: 1.1rem;
+    border: none;
+}
+
+.btn {
+    margin: 35px 0;
+    padding: 10px 50px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background: #f953c6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.btn:hover {
+    background: #f953c6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #b91d73, #f953c6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #b91d73, #f953c6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.submitedForm {
+    animation: formNone .5s reverse both;
+}
+
+@keyframes formNone {
+    to {
+        opacity: 1;
+    }
+
+    from {
+        display: none;
+        opacity: 0;
+    }
+}
+
+.form-section p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    display: none;
+    animation: loveShow 2s;
+    /* animation-delay: 3s; */
+}
+
+.show {
+    color: rgb(211, 78, 100);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+@keyframes loveShow {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

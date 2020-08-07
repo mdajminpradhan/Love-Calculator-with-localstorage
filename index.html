@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <h1>Love Calculator</h1>
+        <div class="form-section">
+            <form action="">
+                <div class="firstPerson">
+                    <label for="first">First Person Name</label>
+                    <input type="text" id="first" class="first" required>
+                </div>
+                <div class="secondPerson">
+                    <label for="second">Second Person Name</label>
+                    <input type="text" id="second" class="second" required>
+                </div>
+                <div class="relationship">
+                    <label for="relation">Relationship</label>
+                    <select name="" id="relation">
+                        <option value="">Couples</option>
+                        <option value="">Friendship</option>
+                        <option value="">Father - Son</option>
+                        <option value="">Father - Daughter</option>
+                        <option value="">Mother - Son</option>
+                        <option value="">Mother - Daughter</option>
+                        <option value="">Brothers</option>
+                        <option value="">Sisters</option>
+                    </select>
+                </div>
+                <button class="btn" type="submit">CALCULATE</button>
+            </form>
+            <div class="result">
+                <p>Your Love Score is - <span class="show"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
